@@ -1,0 +1,189 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:RTRIM 100K
+U 1 1 632E1995
+P 2150 5150
+F 0 "100K" H 2278 5196 50  0000 L CNN
+F 1 "RTRIM" H 2278 5105 50  0000 L CNN
+F 2 "" V 2080 5150 50  0001 C CNN
+F 3 "~" H 2150 5150 50  0001 C CNN
+	1    2150 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R 1M
+U 1 1 632E350B
+P 2150 4700
+F 0 "1M" H 2220 4746 50  0000 L CNN
+F 1 "R" H 2220 4655 50  0000 L CNN
+F 2 "" V 2080 4700 50  0001 C CNN
+F 3 "~" H 2150 4700 50  0001 C CNN
+	1    2150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5000 2150 4850
+$Comp
+L Comparator:LM393 U?
+U 1 1 632E09CC
+P 3650 4950
+F 0 "U?" H 3650 5317 50  0000 C CNN
+F 1 "LM393" H 3650 5226 50  0000 C CNN
+F 2 "" H 3650 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 3650 4950 50  0001 C CNN
+	1    3650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 632FCEAF
+P 2900 3900
+F 0 "J?" V 2864 3712 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 2773 3712 50  0000 R CNN
+F 2 "" H 2900 3900 50  0001 C CNN
+F 3 "~" H 2900 3900 50  0001 C CNN
+	1    2900 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 4850 3350 4850
+$Comp
+L Connector:USB_A J?
+U 1 1 63303CB4
+P 7650 4500
+F 0 "J?" H 7707 4967 50  0000 C CNN
+F 1 "USB_A" H 7707 4876 50  0000 C CNN
+F 2 "" H 7800 4450 50  0001 C CNN
+F 3 " ~" H 7800 4450 50  0001 C CNN
+	1    7650 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4500 6750 4500
+Wire Wire Line
+	7350 4600 6750 4600
+$Comp
+L Interface_USB:FT232RL U?
+U 1 1 632F8B08
+P 5950 4900
+F 0 "U?" H 5950 6081 50  0000 C CNN
+F 1 "FT232RL" H 5950 5990 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 7050 4000 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 5950 4900 50  0001 C CNN
+	1    5950 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5900 5950 6000
+Wire Wire Line
+	5950 6000 7650 6000
+Wire Wire Line
+	7650 6000 7650 4900
+Wire Wire Line
+	6750 4200 6750 3550
+Wire Wire Line
+	6750 3550 4650 3550
+Wire Wire Line
+	2150 3550 2150 4550
+$Comp
+L Device:C 15pF
+U 1 1 6331B3A8
+P 4250 4950
+F 0 "15pF" V 3998 4950 50  0000 C CNN
+F 1 "C" V 4089 4950 50  0000 C CNN
+F 2 "" H 4288 4800 50  0001 C CNN
+F 3 "~" H 4250 4950 50  0001 C CNN
+	1    4250 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 4950 4100 4950
+Wire Wire Line
+	4400 4950 4900 4950
+Wire Wire Line
+	4900 4950 4900 4300
+Wire Wire Line
+	4900 4300 5150 4300
+$Comp
+L Device:R 10K
+U 1 1 6331ECD4
+P 4650 3950
+F 0 "10K" H 4720 3996 50  0000 L CNN
+F 1 "R" H 4720 3905 50  0000 L CNN
+F 2 "" V 4580 3950 50  0001 C CNN
+F 3 "~" H 4650 3950 50  0001 C CNN
+	1    4650 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 4300
+Wire Wire Line
+	4650 4100 4650 4300
+Wire Wire Line
+	4650 4300 4900 4300
+Connection ~ 4650 3550
+Wire Wire Line
+	4650 3550 2150 3550
+Wire Wire Line
+	4650 3550 4650 3800
+Text GLabel 2800 3900 0    50   Input ~ 0
+Master_M-
+Text GLabel 3100 3850 2    50   Input ~ 0
+Slave_M-
+$Comp
+L Device:R R?
+U 1 1 6332FCA3
+P 3050 4450
+F 0 "R?" V 2843 4450 50  0000 C CNN
+F 1 "R" V 2934 4450 50  0000 C CNN
+F 2 "" V 2980 4450 50  0001 C CNN
+F 3 "~" H 3050 4450 50  0001 C CNN
+	1    3050 4450
+	0    1    1    0   
+$EndComp
+Connection ~ 2900 4450
+Wire Wire Line
+	2900 4450 2900 4850
+Wire Wire Line
+	2900 4100 2900 4450
+Wire Wire Line
+	3000 4100 3000 4150
+Wire Wire Line
+	3000 4150 3200 4150
+Wire Wire Line
+	3200 4150 3200 4450
+Wire Wire Line
+	3200 4450 3200 5300
+Wire Wire Line
+	3200 5300 2150 5300
+Connection ~ 3200 4450
+Wire Wire Line
+	2200 5150 2900 5150
+Wire Wire Line
+	2900 5150 2900 5050
+Wire Wire Line
+	2900 5050 3350 5050
+Wire Notes Line
+	5000 6300 8450 6300
+Wire Notes Line
+	8450 6300 8450 3300
+Wire Notes Line
+	8450 3300 5000 3300
+Wire Notes Line
+	5000 3300 5000 6300
+Text Notes 7800 3450 2    50   ~ 0
+https://www.waveshare.com/wiki/FT232_USB_UART_Board_(Type_A)
+$EndSCHEMATC
