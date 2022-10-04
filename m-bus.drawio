@@ -1,1 +1,39 @@
-<mxfile host="app.diagrams.net" modified="2022-10-04T19:30:03.154Z" agent="5.0 (X11)" version="20.4.0" etag="z9wrVW9qCYI7iH3-hWNz" type="github"><diagram id="ZECEh9-nHgijpQ535ytA">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-04T19:37:45.413Z" agent="5.0 (X11)" etag="DuBseDMsrJ1ixwXr7Ozz" version="20.4.0" type="github">
+  <diagram id="ZECEh9-nHgijpQ535ytA" name="Page-1">
+    <mxGraphModel dx="1418" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="usw5ulXXZbcr30hR6kUC-2" value="&lt;div&gt;M-Bus Slave&lt;br&gt;&lt;/div&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;points=[[0,0.17,0,0,0],[0,0.33,0,0,0],[0,0.5,0,0,0],[0,0.67,0,0,0],[0,0.83,0,0,0]];" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="40" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="usw5ulXXZbcr30hR6kUC-3" value="&lt;div&gt;M-Bus Master&lt;/div&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;points=[[1,0.17,0,0,0],[1,0.25,0,0,0],[1,0.33,0,0,0],[1,0.5,0,0,0],[1,0.67,0,0,0],[1,0.75,0,0,0],[1,0.83,0,0,0]];" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="40" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="usw5ulXXZbcr30hR6kUC-5" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.17;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.17;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="usw5ulXXZbcr30hR6kUC-3" target="usw5ulXXZbcr30hR6kUC-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="430" as="sourcePoint" />
+            <mxPoint x="450" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usw5ulXXZbcr30hR6kUC-6" value="M+" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="usw5ulXXZbcr30hR6kUC-5">
+          <mxGeometry x="-0.675" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usw5ulXXZbcr30hR6kUC-7" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.83;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="usw5ulXXZbcr30hR6kUC-9" target="usw5ulXXZbcr30hR6kUC-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="460" as="sourcePoint" />
+            <mxPoint x="450" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="173" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usw5ulXXZbcr30hR6kUC-9" value="10" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.resistors.resistor_1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="410" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
